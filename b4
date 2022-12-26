@@ -1,0 +1,9 @@
+program b6;
+var n,ngay:word;
+begin
+  writeln('nhap nam');readln(n);
+  if (n mod 400 = 0) or (n mod 40 = 0) and (n mod 100 <> 0)
+  then ngay:=366
+  else ngay:=365;
+  writeln('So ngay cua nam la: ',ngay);
+end.
