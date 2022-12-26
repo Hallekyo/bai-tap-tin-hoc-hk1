@@ -1,0 +1,9 @@
+program b3;
+var x,y,z:real;
+begin
+  readln(x,y);
+  if sqr(x) + sqr(y) <= 1 then z:= sqr(x) + sqr(y)
+  else if y >= x then z:=x+y
+  else z:=0.5;
+  writeln('z='z:5);
+end.
